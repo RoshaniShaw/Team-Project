@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SikshaGuardians.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#fefae0] text-[#432818] font-sans">
+<!-- Navbar -->
+<nav class="bg-[#ccd5ae] text-[#432818] px-4 py-3 flex items-center justify-between w-full shadow-md fixed top-0 left-0 z-50">
+  <div class="flex items-center space-x-2 mb-2 md:mb-0">
+    <!-- Logo Image -->
+    <img src="project/logo.png" 
+         alt="SikshaGuardians Logo" 
+         class="w-11 h-11 md:w-10 md:h-10 rounded-full shadow-lg ring-2 ring-[#3e2e1f] transition-transform duration-500 hover:scale-105 hover:rotate-1">
+
+    <!-- Website Name -->
+    <span><a href="Project.html" class="text-xl font-bold animate-pulse">SikshaGuardians</a></span>
+  </div>
+
+  <!-- Right: Hamburger Button (Mobile) -->
+  <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+    &#9776;
+  </button>
+
+  <!-- Nav Links (Desktop) -->
+  <ul class="hidden md:flex gap-6 text-sm font-medium">
+    <li><a href="Project.html#about" class="hover:text-[#9a031e] transition-colors duration-300">About us</a></li>
+    <li><a href="learning-paths.html" class="hover:text-[#9a031e] transition-colors duration-300">Learning Paths</a></li>
+    <li><a href="Imp-Docs.html" class="hover:text-[#9a031e] transition-colors duration-300">Imp Docs</a></li>
+    <li><a href="Top-coding.html" class="hover:text-[#9a031e] transition-colors duration-300">Top coding Q/A</a></li>
+  </ul>
+</nav>
+
+<!-- Mobile Dropdown Menu -->
+<ul id="mobile-menu"
+  class="hidden fixed top-[64px] left-0 w-full bg-[#ccd5ae] text-[#432818] text-sm space-y-2 px-6 py-4 transform -translate-y-full transition-transform duration-300 z-40 shadow-lg md:hidden">
+
+  <li><a href="Project.html#about" class="block py-2 hover:text-[#9a031e]">About us</a></li>
+  <li><a href="learning-paths.html" class="block py-2 hover:text-[#9a031e]">Learning Paths</a></li>
+  <li><a href="Imp-Docs.html" class="block py-2 hover:text-[#9a031e]">Imp Docs</a></li>
+  <li><a href="Top-coding.html" class="block py-2 hover:text-[#9a031e]">Top Coding Q/A</a></li>
+</ul>
+
+
+   <!-- Welcome Section -->
+<section class="relative bg-cover bg-center bg-no-repeat text-center py-24 px-6" style="background-image: url('project/learm_bg.jpg');">
+  <!-- Overlay (for readability) -->
+  <div class="absolute inset-0 bg-black/20" style="backdrop-filter: blur(3px);"></div>
+
+  <!-- Content on top of image -->
+  <div class="relative z-10 text-[#fefae0]" style="text-shadow: 2px 2px 2px rgb(43, 24, 16);">
+    <h1 class="text-5xl font-bold 15mb-6 animate-fade-up ">
+      Learning Paths
+    </h1>
+    <p class=" pt-6 max-w-4xl mx-auto text-lg font-serif italic animate-fade-in">
+      Here, you will get to explore everything about programming languages that provide a perfect learning path
+       for students who have an interest in the technical world.<br><br />
+    </p>
+    <p class="max-w-4xl mx-auto text-lg text-[#fefae0] font-sans italic animate-pulse" style="text-shadow: 2px 2px 2px black;">
+     "Learn, read, and practice with the best online compilers mentioned below in the sections.
+      Get to know everything about coding problems and solve them to score well in your academics and stay one step ahead of your competitors."
+    </p>
+  </div>
+</section>
+<!-- Step 1 -->
+<section class="bg-[#faedcd] py-10 px-6">
+  <h1 class="text-center font-bold font-serif underline text-xl italic mb-6">Explore the following Questions by cliking on the buttons-</h1>
+  <div class="flex flex-wrap justify-center gap-4 md:gap-16 max-w-full mx-auto p-4">
+      <!-- Button 1 -->
+        <a href="#Beginner">
+            <button type="button" class="
+                focus:outline-none text-white bg-[#432818] hover:bg-[#9a031e] focus:ring-4 font-medium rounded-lg 
+                text-xs sm:text-sm md:text-base 
+                px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
+                whitespace-nowrap transition duration-300
+                shadow-md hover:shadow-lg">
+                Top 15 Beginner Level (Q)
+            </button>
+        </a>
+      <!-- Button 2 -->
+        <a href="#Intermediate">
+            <button type="button" class="
+                focus:outline-none text-white bg-[#432818] hover:bg-[#9a031e] focus:ring-4 font-medium rounded-lg 
+                text-xs sm:text-sm md:text-base 
+                px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
+                whitespace-nowrap transition duration-300
+                shadow-md hover:shadow-lg">
+                Top 15 Intermediate Level (Q)
+            </button>
+        </a>
+      <!-- Button 3 -->
+        <a href="#Advanced">
+            <button type="button" class="
+                focus:outline-none text-white bg-[#432818] hover:bg-[#9a031e] focus:ring-4 font-medium rounded-lg 
+                text-xs sm:text-sm md:text-base 
+                px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
+                whitespace-nowrap transition duration-300
+                shadow-md hover:shadow-lg">
+                Top 15 Advanced Level (Q)
+            </button>
+        </a>
+    </div>
+</section>
+
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg  gap-6 w-full">
+        <h2 class="font-bold mb-2 text-[#82431e] text-center text-2xl">An Overview about basic fundamentals of Programming languages-</h2>
+          <div class="text-start font-semibold">
+          <h3 class=" font-serif text-xl">1. What is an algorithm?</h3>
+          <p class="text-lg italic"> Answer: An algorithm is a set of instructions or a process that is followed to solve a problem or perform a task. It's a recipe for a computer to follow</p> <br>
+          <h3 class=" font-serif text-xl">2. What is the difference between a compiler and an interpreter?</h3>
+          <p class="text-lg italic"> Answer: A compiler translates the entire source code into machine code all at once, while an interpreter translates the code line by line and executes it immediately.</p> <br>
+          <h3 class="font-serif text-xl">3. What is a variable? How do you declare one ?</h3>
+          <p class="text-lg italic"> Answer: A variable is a named storage location that can hold data (like numbers, text, etc.) during a program's execution. Its value can change during the program's runtime.</p> <br>
+          <h3 class=" font-serif text-xl">4. What are data types?</h3>
+          <p class="text-lg italic"> Answer: Data types specify the kind of data a variable can hold. Common data types include integers (whole numbers), floating-point numbers (numbers with decimal points), booleans (true/false), characters, and strings (sequences of characters).</p> <br>
+          <h3 class=" font-serif text-xl">5. How do you take input from a user?</h3>
+          <p class="text-lg italic "> Answer: To get user input in most programming languages, you typically use functions like input() (Python), scanf() (C), or the Scanner class (Java). These functions allow your program to pause and wait for the user to type something, which the program then reads and uses.</p> <br>
+          <h3 class=" font-serif text-xl">6. What is a syntax error?</h3>
+          <p class="text-lg italic "> Answer: A syntax error occurs when the code violates the grammar rules of the programming language. These are usually detected during compilation or interpretation.</p> <br>
+          <h3 class=" font-serif text-xl">7. What is a conditional statement?</h3>
+          <p class="text-lg italic "> Answer: A conditional statement allows a program to make decisions based on specific conditions. Common conditional statements include if, else if, and else statements.</p> <br>
+          <h3 class="font-serif text-xl">8. What do you mean by loops and its types?</h3>
+          <p class="text-lg italic "> Answer: A loop is a control structure that allows a block of code to be executed repeatedly. Common types of loops include for loops and while loops.</p> <br>
+          <h3 class="font-serif text-xl">9. What do you mean by operators and there types of implementation?</h3>
+          <p class="text-lg italic "> Answer: In computer programming, operators are symbols that represent specific actions or operations to be performed on data or variables. They are the building blocks that enable programs to manipulate data, perform calculations, and make decisions. Operators can be broadly categorized into various types, including: Arithmetic Operators, Relational Operators, Logical Operators, Bitwise Operators, Assignment Operators, Unary Operators, Ternary Operator, Conditional Operator.</p> <br>
+          <h3 class=" font-serif text-xl">10. What are arrays?</h3>
+          <p class="text-lg italic ">Answer: An array is a data structure that stores a collection of elements of the same data type. Elements are accessed using an index (a number starting from 0).</p> <br>
+          <h3 class="  font-serif text-xl">11. What is the purpose of a function in programming, and how do you define and call one?</h3>
+          <p class="text-lg italic ">Answer: In programming, functions are reusable blocks of code that perform a specific task. They are defined with a name and can take input (parameters) and return output (a value or void). Functions are called by referencing their name, optionally with arguments to pass in data.</p> <br>
+          <h3 class="  font-serif text-xl">12. What do you mean by conditional statement? How can you implement that?</h3>
+          <p class="text-lg italic ">Answer: A conditional statement, or conditional expression, is a type of programming statement that allows a program to make decisions based on whether a certain condition is true or false. In essence, it controls the flow of execution by allowing different blocks of code to be executed depending on the outcome of a condition. There are various types, including basic if, if-else, nested if, switch, and ternary operator.</p> <br>
+          <h3 class=" font-serif text-xl">13. What do you mean by string and its implementation?</h3>
+          <p class="text-lg italic ">Answer: A string is often implemented as an array data structure of bytes (or words) that stores a sequence of elements, typically characters, using some character encoding.</p> <br>
+          <h3 class=" font-serif text-xl">14. What is debugging?</h3>
+          <p class="text-lg italic ">Answer: Debugging is the process of finding and fixing errors or bugs in the source code.</p> <br>
+          <h3 class=" font-serif text-xl">15. What is object-oriented programming (OOP)?</h3>
+          <p class="text-lg italic ">Answer: OOP is a programming paradigm based on the concept of "objects" which are collections of data (attributes) and actions (methods). Common OOP concepts include classes, objects, inheritance, polymorphism, and encapsulation.</p> <br>
+        </div>
+        <div class="font-bold text-lg italic">
+          <p>Pro Tips: to gather more knowledge and easy understanding about Basic Programming fundamentals Theory concepts must go through the best documentation Intro page link:
+            <a href="https://www.w3schools.com/programming/index.php" class="text-[#092170] font-serif underline bg-[#dffa84] bg-rounded-lg">W3schools intro prgramming page</a>
+          </p>
+        </div>
+    </div>
+ 
+ <!-- Step 2 -->
+  <section id="Beginner" class=" py-10 px-6 flex flex-col gap-6">
+    <h2 class="text-2xl font-semibold font-serif italic underline mb-6 text-center animate-fade-up">Top 15 Beginner-Level Questions in Coding :</h2>
+      <div class="bg-white p-6 rounded-lg shadow-lg w-full h-auto font-semibold text-start">
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">1.Write a program to print "Hello, World!"</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">2.Write a program to print a message multiple time.</h3> <br>  
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">3.Write a program that takes two numbers as input and prints their sum.</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">4.Write a program to check if a given number is even or odd.</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">5.Write a program to find the factorial of a given number.</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">6.Write a program to implement a calculator (Addition ,Multiplication ,Subtraction ,Division)</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">7.Write a program to check whether a year is leap year or not,take user input.</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">8.Write a program to reverse a number(take user input).</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">9.Write a program to find the largest number among three numbers.</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">10.Write a program to check whether a number is prime or not(take user input).</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">11.Write a program to calculate the area and circumference of a circle.</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">12.Write a program to swap two numbers using a container.</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">13.Write a program to take input from user and check whether a number is positive or negative.</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">14.Write a program to find square of a number.</h3> <br>
+        <h3 class="font-serif text-xl mb-2 text-[#82431e]  ">15.Write a program to check whether a number is equal or not(take user input).</h3> <br>
+      <!-- The buttons link for code editors -->
+        <div class="flex flex-wrap justify-center gap-6 md:gap-32 max-w-full mx-auto p-4">
+  <a href="https://www.onlinegdb.com/">
+        <button type="button" class="
+            focus:outline-none text-black bg-[#DDF0F7] hover:bg-[#ccd5ae] focus:ring-4 font-medium rounded-lg 
+            text-xs sm:text-sm md:text-base 
+            px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
+            whitespace-nowrap transition duration-300
+            shadow-md hover:shadow-lg">
+             OnlineGDB Compiler
+        </button> 
+      </a>
+
+   <a href="https://www.programiz.com/c-programming/online-compiler/">
+       <button type="button" class="
+            focus:outline-none text-black bg-[#DDF0F7] hover:bg-[#ccd5ae] focus:ring-4 font-medium rounded-lg 
+            text-xs sm:text-sm md:text-base 
+            px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
+            whitespace-nowrap transition duration-300
+            shadow-md hover:shadow-lg">
+            Programiz Compiler
+        </button>
+    </a>
+
+  <a href="https://ideone.com/">
+            <button type="button" class="
+            focus:outline-none text-black bg-[#DDF0F7] hover:bg-[#ccd5ae] focus:ring-4 font-medium rounded-lg 
+            text-xs sm:text-sm md:text-base 
+            px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
+            whitespace-nowrap transition duration-300
+            shadow-md hover:shadow-lg">
+            Ideone  Compiler
+        </button>
+    </a>
+   </div>
+
+  </div>
+    <h2 class="text-2xl font-semibold font-serif italic underline mb-6 text-center animate-fade-up">The Best Video Tutorials of most common Programming Languages</h2>
+    <div class="bg-white p-6  rounded-lg shadow-lg  w-full h-auto ">
+        <h3 class="font-bold font-serif mb-2 text-2xl text-[#432818] text-center">Choose any Programming Language Acording to your preference-</h3>
+     <!-- Responsive Video Grid -->
+<div class="flex flex-wrap justify-center gap-8 pt-6">
+  <div class="w-full sm:w-[350px] aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+      src="https://www.youtube.com/embed/irqbmMNs2Bo?si=xGCzkG93C_mx7oxS"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="w-full sm:w-[350px] aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+      src="https://www.youtube.com/embed/e7sAf4SbS_g?si=8IiBKhdYCkp2wVPd"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="w-full sm:w-[350px] aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+      src="https://www.youtube.com/embed/ECT-ehj-q7s?si=_kGEfZkoKvLkgKTN"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="w-full sm:w-[350px] aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+      src="https://www.youtube.com/embed/-hh6raHUUvk?si=lIVa2EH0GMs5wG1t"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="w-full sm:w-[350px] aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+      src="https://www.youtube.com/embed/lGmRnu--iU8?si=YaTG4GAKF39_c3cs"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="w-full sm:w-[350px] aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+      src="https://www.youtube.com/embed/YrtFtdTTfv0?si=ZkRPFsGb7pbpU6WE"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+   <div class="font-bold text-lg italic text-center">
+    <p>Pro Tips: to gather more knowledge about Programming Languages and other topics go through the best documentation site:
+            <a href="https://www.w3schools.com/" class="text-[#092170] font-serif underline bg-[#dffa84] bg-rounded-lg">W3schools Home</a>
+          </p>
+   </div>
+</div>
+<h2 class="text-2xl font-semibold font-serif italic pt-8 text-center underline">Wacth the following Tutorials for Full-Stack Web Development course:</h2>
+<div class="flex flex-wrap justify-center gap-8 pt-6">
+
+  <div class="w-full sm:w-[350px] aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+      src="https://www.youtube.com/embed/HGTJBPNC-Gw?si=Iimz9DSleisX43BU" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="w-full sm:w-[350px] aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+      src="https://www.youtube.com/embed/BTyDQRil9s4?si=nNwJ1Lenj5lTmaZ-"
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen></iframe>
+  </div>
+
+  <div class="w-full sm:w-[350px] aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+     src="https://www.youtube.com/embed/PCcMF1xTQO0?si=7SJ-Y5zuq7HuVy_C" 
+     title="YouTube video player" 
+     frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     allowfullscreen></iframe>
+  </div>
+
+  <div class="w-full sm:w-[350px] aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+     src="https://www.youtube.com/embed/LuNPCSNr-nE?si=-Q-OJQfg-vsiWalN" 
+     title="YouTube video player" 
+     frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     allowfullscreen></iframe>
+  </div>
+
+  <div class="w-full sm:w-[350px] aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+     src="https://www.youtube.com/embed/k7o9R6eaSes?si=Hv5Dl4vRdLqEARgU" 
+     title="YouTube video player" 
+     frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     allowfullscreen></iframe>
+  </div>
+
+  <div class="w-full sm:w-[350px] aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+     src="https://www.youtube.com/embed/6tdfhlIoxOw?si=btTsrjfzGnLCKXAf" 
+     title="YouTube video player" 
+     frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     allowfullscreen></iframe>
+  </div>
+
+</div>
+</div>
+
+</section>
+ <!-- Step 3 -->
+<section id="Intermediate" class="bg-[#faedcd] py-10 px-6 flex flex-col gap-6 h-auto">
+    <h2 class="text-2xl font-semibold font-serif underline italic mb-6 text-center animate-fade-up">Top 15 intermideate questions :</h2>
+     <div class="font-semibold text-[#3f5202]">
+     <h3 class="font-serif text-xl mb-2   ">1.Write a program to reverse a string.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">2.Write a program to print the Fibonacci series.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">3.Write a program to check Armstrong number.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">4.Write a program to convert minutes into seconds.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">5.Write a program to check whether a number is perfect or not.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">6.Write a program to check whether  a string is palindrome or not.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">7.Write a program to count vowels and consonants in a given string.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">8.write a program to find a second largest number in an array.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">9.Write a program to convert a decimal number to its binary representations.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">10.Write a program to find GCD(HCF) and LCM of two numbers.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">11.Write a program to count the frequency of a character in a string.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">12.Write a program to replace all vowels with (*) in a string.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">13.Write a program to calculate power of a number (x^n) without using power function.(Ex:2^3=8)</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">14.Write a program to count the numbers of a word in a sentence.</h3> <br>
+     <h3 class="font-serif text-xl mb-2   ">15.Write a program to check if a string is Anagram of another.(As ex: listen is anagram of silent because the words have same characters)</h3> <br>
+     
+<!-- The buttons link for code editors -->
+  <div class="flex flex-wrap justify-center gap-6 md:gap-32 max-w-full mx-auto p-4">
+   <a href="https://onecompiler.com/editor">
+        <button type="button" class="
+            focus:outline-none text-white bg-[#82431e] hover:bg-[#691422] focus:ring-4 font-medium rounded-lg 
+            text-xs sm:text-sm md:text-base 
+            px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
+            whitespace-nowrap transition duration-300
+            shadow-md hover:shadow-lg">
+              One Compiler
+        </button> 
+      </a>
+
+   <a href="https://www.codechef.com/ide">
+       <button type="button" class="
+            focus:outline-none text-white bg-[#82431e] hover:bg-[#691422] focus:ring-4 font-medium rounded-lg 
+            text-xs sm:text-sm md:text-base 
+            px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
+            whitespace-nowrap transition duration-300
+            shadow-md hover:shadow-lg">
+            CodeChef IDE Compiler
+        </button>
+    </a>
+
+   <a href="https://paiza.io/en/projects/new">
+            <button type="button" class="
+            focus:outline-none text-white bg-[#82431e] hover:bg-[#691422] focus:ring-4 font-medium rounded-lg 
+            text-xs sm:text-sm md:text-base 
+            px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
+            whitespace-nowrap transition duration-300
+            shadow-md hover:shadow-lg">
+             Paiza.IO Compiler
+        </button>
+    </a>
+   </div>
+  </div>
+
+  <div class="font-bold text-lg italic text-center text-[#432818]">
+    <p>Suggetions: to Improve your university learnings and Score well in your academics you should explore this Learning site:
+            <a href="https://www.codechef.com/practice#programming-languages" class="text-[#092170] font-serif underline bg-[#dffa84] bg-rounded-lg">CodeChef-practice page</a>
+        </p>
+  </div>
+
+  </section>
+ <!-- Step 4 -->
+<section id="Advanced" class=" py-10 px-6 flex flex-col gap-6 h-auto">
+    <h2 class="text-2xl font-semibold font-serif italic underline mb-6 text-center animate-fade-up">Top 15 Advanced level questions :</h2>
+  <div class="font-semibold text-[#631547]">
+    <h3 class="font-serif text-xl mb-2   ">1.Write a program to merge two sorted list.</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">2.Write a program to flatten a nested list.(Input : [[1,2],[3,4]] -- [1,2,3,4])</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">3.Write a program to find missing number in a array(1 to n).</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">4.Write a program to find all pairs with a given difference in Array.(Ex: Difference= 2 -- Input:(1,3) Output:(3,5))</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">5.Write a program to implement matric addition and multiplication.</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">6.Write a program to implement a simple password validator.</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">7.Write a program to convert a string into title case.</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">8.Write a program to convert roman integer to decimal number.</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">9.Write a program to move all the zeros to the end of the list.</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">10.Write a program to check if a number is strong number or not.(EX: 145= 1! + 4! + 5!)</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">11.Write a program to find first non repeating character in a string.</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">12.Write a program to find all pairs in a list that sum to a given value.</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">13.Write a program to implement bubble sort technique.</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">14.Write a program to implement linear search technique.</h3> <br>
+    <h3 class="font-serif text-xl mb-2   ">15.Write a program to implement factorial using recursion.</h3> <br>
+     
+        <!-- The buttons link for code editors -->
+ <div class="flex flex-wrap justify-center gap-6 md:gap-32 max-w-full mx-auto p-4">
+  <a href="https://www.jdoodle.com/">
+        <button type="button" class="
+            focus:outline-none text-white bg-[#9e394a] hover:bg-[#b5612f] focus:ring-4 font-medium rounded-lg 
+            text-xs sm:text-sm md:text-base 
+            px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
+            whitespace-nowrap transition duration-300
+            shadow-md hover:shadow-lg">
+             JDoodle Compiler
+        </button> 
+      </a>
+
+   <a href="https://rextester.com/">
+       <button type="button" class="
+            focus:outline-none text-white bg-[#9e394a] hover:bg-[#b5612f] focus:ring-4 font-medium rounded-lg 
+            text-xs sm:text-sm md:text-base 
+            px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
+            whitespace-nowrap transition duration-300
+            shadow-md hover:shadow-lg">
+            Rextester Compiler
+        </button>
+    </a>
+
+  <a href="https://www.sololearn.com/en/compiler-playground">
+            <button type="button" class="
+            focus:outline-none text-white bg-[#9e394a] hover:bg-[#b5612f] focus:ring-4 font-medium rounded-lg 
+            text-xs sm:text-sm md:text-base 
+            px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 
+            whitespace-nowrap transition duration-300
+            shadow-md hover:shadow-lg">
+            Sololearn Compiler
+        </button>
+    </a>
+   </div>
+  </div> 
+  
+  <div class="font-bold text-lg italic text-center text-[#432818]">
+    <p>Suggetions: to Improve your university learnings and Score well in your academics you should explore this Learning site:
+            <a href="https://exercism.org/tracks" class="text-[#092170] font-serif underline bg-[#dffa84] bg-rounded-lg">Exercism-tracks page</a>
+        </p>
+  </div>
+  
+</section>
+
+    <!-- Footer -->
+
+ <footer class="bg-[#d4a373] text-[#432818] py-10 px-6">
+   <div class=" flex justify-center pb-8 ">
+      <p class="font-bold text-lg text-center">About Us | Contact | © 2025 SikshaGuardians.com</p>
+    </div>
+ <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:flex lg:justify-center lg:gap-24">
+   <div class="w-full lg:pl-24">
+        <h4 class="font-semibold text-lg mb-4">Founder</h4>
+        <ul class="space-y-2">
+            <li><a  class="text-blue-700 hover:text-gray-300 transition-colors duration-200 text-md">Nisha Mallick</a></li>
+            <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-md">The Project Manager </a></li>
+             <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-md">and Front-end Developer</a></li>
+          </ul>
+    </div>
+
+    <div class="w-full">
+        <h4 class="font-semibold text-lg mb-4">Teammates</h4>
+        <ul class="space-y-2">
+            <li><a  class="text-blue-700 hover:text-gray-300 transition-colors duration-200 text-md">Ujjayini Banerjee</a></li>
+            <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm">The Designer and Content Strategist</a></li>
+
+            <li><a  class="text-blue-700 hover:text-gray-300 transition-colors duration-200 text-md">Roshani Shaw</a></li>
+            <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm">The Researcher and Data Analyst</a></li>
+
+            <li><a  class="text-blue-700 hover:text-gray-300 transition-colors duration-200 text-md">Riya Biswas</a></li>
+            <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm">The Content Writer and QA Tester</a></li>
+        </ul>
+    </div>
+
+    <div class="w-full">
+        <h4 class="font-semibold text-lg mb-4">Contacts</h4>
+        <ul class="space-y-2">
+            <li><a  class="text-blue-700 hover:text-gray-300 transition-colors duration-200 text-md">Email</a></li>
+            <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-md">Sikshagaurdians@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <div class="w-full">
+        <h4 class="font-semibold text-lg mb-4">Occupation</h4>
+        <ul class="space-y-2">
+            <li><a  class="text-blue-700 hover:text-gray-300 transition-colors duration-200 text-md">Student</a></li>
+            <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-md">Pursuing BscIT</a></li>
+        </ul>
+    </div>
+
+</div> 
+</footer>
+
+ <!-- Animations -->
+  <style>
+    @keyframes fade-in {
+      0% { opacity: 0; transform: translateY(-10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+      animation: fade-in 1s ease-out;
+    }
+
+    @keyframes fade-up {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-up {
+      animation: fade-up 1s ease-out;
+    }
+  </style>
+
+</body>
+<!-- Javascript toggles the visibility of navbar -->
+<!-- JavaScript for Menu Toggle -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  let menuOpen = false;
+
+  menuBtn.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    if (menuOpen) {
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => mobileMenu.classList.remove('-translate-y-full'), 10);
+    } else {
+      mobileMenu.classList.add('-translate-y-full');
+      setTimeout(() => mobileMenu.classList.add('hidden'), 300); // match transition duration
+    }
+  });
+</script>
+
+
+</html>

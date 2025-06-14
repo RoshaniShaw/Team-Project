@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SikshaGuardians.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#fefae0] text-[#432818] font-sans">
+<!-- Navbar -->
+<nav class="bg-[#ccd5ae] text-[#432818] px-4 py-3 flex items-center justify-between w-full shadow-md fixed top-0 left-0 z-50">
+  <div class="flex items-center space-x-2 mb-2 md:mb-0">
+    <!-- Logo Image -->
+    <img src="project/logo.png" 
+         alt="SikshaGuardians Logo" 
+         class="w-11 h-11 md:w-10 md:h-10 rounded-full shadow-lg ring-2 ring-[#3e2e1f] transition-transform duration-500 hover:scale-105 hover:rotate-1">
+
+    <!-- Website Name -->
+    <span><a href="Project.html" class="text-xl font-bold animate-pulse">SikshaGuardians</a></span>
+  </div>
+
+  <!-- Right: Hamburger Button (Mobile) -->
+  <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+    &#9776;
+  </button>
+
+  <!-- Nav Links (Desktop) -->
+  <ul class="hidden md:flex gap-6 text-sm font-medium">
+    <li><a href="Project.html#about" class="hover:text-[#9a031e] transition-colors duration-300">About us</a></li>
+    <li><a href="learning-paths.html" class="hover:text-[#9a031e] transition-colors duration-300">Learning Paths</a></li>
+    <li><a href="Imp-Docs.html" class="hover:text-[#9a031e] transition-colors duration-300">Imp Docs</a></li>
+    <li><a href="Top-coding.html" class="hover:text-[#9a031e] transition-colors duration-300">Top coding Q/A</a></li>
+  </ul>
+</nav>
+
+<!-- Mobile Dropdown Menu -->
+<ul id="mobile-menu"
+  class="hidden fixed top-[64px] left-0 w-full bg-[#ccd5ae] text-[#432818] text-sm space-y-2 px-6 py-4 transform -translate-y-full transition-transform duration-300 z-40 shadow-lg md:hidden">
+
+  <li><a href="Project.html#about" class="block py-2 hover:text-[#9a031e]">About us</a></li>
+  <li><a href="learning-paths.html" class="block py-2 hover:text-[#9a031e]">Learning Paths</a></li>
+  <li><a href="Imp-Docs.html" class="block py-2 hover:text-[#9a031e]">Imp Docs</a></li>
+  <li><a href="Top-coding.html" class="block py-2 hover:text-[#9a031e]">Top Coding Q/A</a></li>
+</ul>
+   <!-- Welcome Section -->
+<section class="relative bg-cover bg-center bg-no-repeat text-center py-24 px-6" style="background-image: url('project/welcome.jpg');">
+  <!-- Overlay (for readability) -->
+  <div class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+
+  <!-- Content on top of image -->
+  <div class="relative z-10 text-[#ccd5ae]">
+    <h1 class="text-5xl font-bold mb-6 animate-fade-up animate-bounce">
+      Welcome Students
+    </h1>
+    <p class="max-w-4xl mx-auto text-lg font-serif italic animate-fade-in">
+      Let's dive into the technical world and begin your journey with us! where we are providing a "All in one" platform
+      with the step by step guidance and a proper beginner friendly learning path.<br><br />
+    </p>
+    <p class="max-w-4xl mx-auto text-lg font-sans italic animate-pulse">
+      If you are a complete beginner or a tech background student who is interested in technical learnings then this
+      platform is for you, grow your academics in college without any confusion.
+    </p>
+  </div>
+</section>
+
+  <!-- Step 1 -->
+  <section id="step1" class="bg-[#faedcd] py-10 px-6">
+    <h2 class="text-2xl font-semibold font-serif italic mb-6 text-center animate-fade-up">Guidance: Step 1</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+        <h3 class="font-bold mb-2 text-[#82431e]">In Learning Path</h3>
+        <ul class="list-disc pl-5 text-sm text-[#432818]">
+          <li> Learn About the fundamentals of different programming languages with all the Top questions, documentations and best suggested online code editors.  </li>
+          <li>Get the best Youtube videos of every languages with the best coding compilers for each language mentioned in your learning path page, don't wait go ahead and start learning without any confusion. </li>
+          <li>The 1st section of this page will contain Top 15 fundamentals basic Questions on any programming languages. You will get a direct acess to the Youtube videos and documentations from the next section and also get acess to the best coding compilers for an easy implementation.</li>
+          <li>The 2nd section will contain the Top 15 highly recommended Beginner-To-Intermediate Questions with the best videos and documentations attached below.</li>
+          <li>The Last but not the least 3rd section will contain Top 15 Valuable logic building Questions on programing with an direct acess of documentation, Videos and code editors.<br><br/></li>
+          <p>Don't Waste your valuable time in searching just start your coding journey hussel free! go to <br><br/>
+          <a href="learning-paths.html">
+        <button type="button" class="focus:outline-none text-white bg-[#432818] hover:bg-[#9a031e] focus:ring-4  
+        font-medium rounded-lg text-sm px-3 py-2 mb-2 transition duration-300 p-3">
+         Learning Paths</button></a>
+         </p>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+        <h3 class="font-bold mb-2 text-[#432818] text-lg">The Best online Code Editors for students-</h3>
+        <p class="text-md text-[#432818] italic ">One can be used for any preferred programming languages, Here are the Top Editors/Compilers.</p>
+        <img src="project/code editor.jpg" alt="Code Editors" class="rounded h-auto max-w-xl pt-5">
+      </div>
+    </div>
+  </section>
+
+  <!-- Step 2 -->
+  <section id="step2" class="py-10 px-6">
+    <h2 class="text-2xl font-semibold font-serif italic mb-6 text-center animate-fade-up">Guidance: Step 2</h2>
+    <div class=" gap-6 flex md:flex wrap">
+      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+        <h3 class="font-bold mb-2 text-[#82431e]">Important Docs / IMP Docs</h3>
+         <ul class="list-disc pl-5 text-md text-[#432818]"></ul>
+         <li>We providing some important core tech subjects that are mainly covered by colleges in BCA,BSC and B.Tech degrees. </li>
+          <li>The 1st section will contain some detailed explanation about the subjects such as operating system, computer organisation(COA), DBMS(database management system), DSA(Data Structure and Algorithm) etc. with the preference of best platfroms and video tutorials linked below.</li>
+          <li>The 2nd section will contain the most important questions about the core subjects which are often asked by the universities and colleges.</li>
+          <li>The 3rd section will contain some more top question that are aksed or may asked in the Interviews. If possible we will also include some video tutorials based on this topics in below of this section.<br><br/></li>
+          <p>Don't miss out the plus opportunity to learn everything hussel free,Then why not go ahead without any delay and begin your career with us! <br><br/>
+          <a href="Imp-Docs.html">
+        <button type="button" class="focus:outline-none text-white bg-[#432818] hover:bg-[#9a031e] focus:ring-4  
+        font-medium rounded-lg text-sm px-3 py-2 mb-2 transition duration-300 p-3">
+          Imp Documents</button></a>
+         </p>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+        <h3 class="font-bold mb-2 text-[#432818] text-lg">The Best Larning Platforms for Study Materials-</h3>
+        <p class="text-md text-[#432818] italic ">One can be used for referring documentations, Below are the Top Learning platforms.</p>
+        <img src="project/learning_platform.jpg" alt="Learning Platforms" class="rounded h-auto max-w-xl pt-9">
+      </div>
+    </div>
+  </section>
+
+  <!-- Step 3 -->
+  <section id="step3" class="bg-[#e9edc9] py-10 px-6">
+    <h2 class="text-2xl font-semibold font-serif italic mb-6 text-[#432818] text-center animate-fade-up">Guidance: Step 3</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+        <h3 class="font-bold mb-2 text-[#82431e]">Top Coding Questions</h3>
+        <ul class="list-disc pl-5 text-md text-[#432818]">
+          <li>You will explore the important topics to enhance your career by solving the best interview level questions and get familiar with the top coding practice platfroms which will be provided below. </li>
+          <li>The 1st section will contain some top logic building questions including pattern problems with the best videos attached to this section.</li>
+          <li>The 2nd section contain some engaging gaming platforms realated to programming which will boost your knowledge and helps you in building logic.</li>
+          <li>The last section will contain the top interview level questions based on the latest research, then get acess to the direct link of some best practice coding platforms below the questions section.<br><br/></li>
+          <p>Don't make an impulsive decision on which questions to practice before preparing for your dream interview, so what are you waiting for go ahead and try something new without a hussel !<br><br/>
+          <a href="Top-coding.html">
+        <button type="button" class="focus:outline-none text-white bg-[#432818] hover:bg-[#9a031e] focus:ring-4  
+        font-medium rounded-lg text-sm px-3 py-2 mb-2 transition duration-300 p-3">
+          Top coding Q/A</button></a>
+         </p>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+        <h3 class="font-bold mb-2 text-[#432818] text-lg">The Best Practice Platforms & Interactive games-</h3>
+        <p class="text-md text-[#432818] italic ">One can be used for Practicing coding and easy understanding of the logics with the help of Top platforms mentioned Below.</p>
+        <img src="project/best_platform.jpg" alt="Famous Platforms" class="rounded h-auto pt-4">
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer -->
+
+ <footer class="bg-[#d4a373] text-[#432818] py-10 px-6">
+   <div id="about"class=" flex justify-center pb-8 ">
+      <p class="font-bold text-lg text-center">About Us | Contact | © 2025 SikshaGuardians.com</p>
+    </div>
+ <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:flex lg:justify-center lg:gap-24">
+   <div class="w-full lg:pl-24">
+        <h4 class="font-semibold text-lg mb-4">Founder</h4>
+        <ul class="space-y-2">
+            <li><a  class="text-blue-700 hover:text-gray-300 transition-colors duration-200 text-md">Nisha Mallick</a></li>
+            <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-md">The Project Manager </a></li>
+             <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-md">and Front-end Developer</a></li>
+          </ul>
+    </div>
+
+    <div class="w-full">
+        <h4 class="font-semibold text-lg mb-4">Teammates</h4>
+        <ul class="space-y-2">
+            <li><a  class="text-blue-700 hover:text-gray-300 transition-colors duration-200 text-md">Ujjayini Banerjee</a></li>
+            <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm">The Designer and Content Strategist</a></li>
+
+            <li><a  class="text-blue-700 hover:text-gray-300 transition-colors duration-200 text-md">Roshani Shaw</a></li>
+            <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm">The Researcher and Data Analyst</a></li>
+
+            <li><a  class="text-blue-700 hover:text-gray-300 transition-colors duration-200 text-md">Riya Biswas</a></li>
+            <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm">The Content Writer and QA Tester</a></li>
+        </ul>
+    </div>
+
+    <div class="w-full">
+        <h4 class="font-semibold text-lg mb-4">Contacts</h4>
+        <ul class="space-y-2">
+            <li><a  class="text-blue-700 hover:text-gray-300 transition-colors duration-200 text-md">Email</a></li>
+            <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-md">Sikshagaurdians@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <div class="w-full">
+        <h4 class="font-semibold text-lg mb-4">Occupation</h4>
+        <ul class="space-y-2">
+            <li><a  class="text-blue-700 hover:text-gray-300 transition-colors duration-200 text-md">Student</a></li>
+            <li><a  class="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-md">Pursuing BscIT</a></li>
+        </ul>
+    </div>
+
+</div> 
+</footer>
+
+  <!-- Animations -->
+  <style>
+    @keyframes fade-in {
+      0% { opacity: 0; transform: translateY(-10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+      animation: fade-in 1s ease-out;
+    }
+
+    @keyframes fade-up {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-up {
+      animation: fade-up 1s ease-out;
+    }
+  </style>
+</body>
+<!-- Javascript toggles the visibility of navbar -->
+<!-- JavaScript for Menu Toggle -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  let menuOpen = false;
+
+  menuBtn.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    if (menuOpen) {
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => mobileMenu.classList.remove('-translate-y-full'), 10);
+    } else {
+      mobileMenu.classList.add('-translate-y-full');
+      setTimeout(() => mobileMenu.classList.add('hidden'), 300); // match transition duration
+    }
+  });
+</script>
+
+</html>
